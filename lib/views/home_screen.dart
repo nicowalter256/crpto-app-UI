@@ -50,7 +50,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 height: 40,
               ),
               const Text(
-                'Total balance',
+                'Total balances',
                 style: TextStyle(color: Constants.whiteBg, fontSize: 20.0),
               ),
               const Text(
