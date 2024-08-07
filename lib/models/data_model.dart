@@ -5,10 +5,12 @@ part 'data_model.g.dart';
 class DataModel {
   int id;
   String name;
+  double value;
 
   DataModel({
     required this.id,
     required this.name,
+    required this.value,
   });
   Map toJson() {
     return _$DataModelToJson(this);
