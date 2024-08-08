@@ -2,25 +2,33 @@ import 'package:crypto_app/constants/constants.dart';
 import 'package:flutter/material.dart';
 
 class CardWidget extends StatelessWidget {
-  const CardWidget({super.key});
+  final Color firstColor, secondColor, thirdColor;
+  final String value, description, price, name;
+
+  const CardWidget({
+    super.key,
+    required this.firstColor,
+    required this.secondColor,
+    required this.thirdColor,
+    required this.name,
+    required this.value,
+    required this.description,
+    required this.price,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Container(
         height: 300,
         width: 200,
-        decoration: const BoxDecoration(
-          borderRadius: BorderRadius.all(
+        decoration: BoxDecoration(
+          borderRadius: const BorderRadius.all(
             Radius.circular(30),
           ),
           gradient: LinearGradient(
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
-            colors: [
-              Constants.secondary,
-              Constants.blackBg,
-              Constants.tertially
-            ],
+            colors: [firstColor, secondColor, thirdColor],
           ),
         ),
         child: Stack(
@@ -32,21 +40,21 @@ class CardWidget extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Padding(
-                  padding: EdgeInsets.only(top: 30, left: 25),
+                Padding(
+                  padding: const EdgeInsets.only(top: 30, left: 25),
                   child: Text(
-                    "BTC",
-                    style: TextStyle(
+                    name,
+                    style: const TextStyle(
                         color: Constants.whiteBg,
                         fontSize: 25,
                         fontWeight: FontWeight.bold),
                   ),
                 ),
-                const Padding(
-                  padding: EdgeInsets.only(left: 25),
+                Padding(
+                  padding: const EdgeInsets.only(left: 25),
                   child: Text(
-                    'Bitcoin',
-                    style: TextStyle(color: Constants.whiteBg),
+                    description,
+                    style: const TextStyle(color: Constants.whiteBg),
                   ),
                 ),
                 Padding(
@@ -60,10 +68,10 @@ class CardWidget extends StatelessWidget {
                         Radius.circular(20),
                       ),
                     ),
-                    child: const Center(
+                    child: Center(
                       child: Text(
-                        '+5.36%',
-                        style: TextStyle(
+                        value,
+                        style: const TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 12),
                       ),
                     ),
@@ -91,9 +99,10 @@ class CardWidget extends StatelessWidget {
                   const SizedBox(
                     width: 50,
                   ),
-                  const Text(
-                    '\$15,325.00',
-                    style: TextStyle(
+                  Text(
+                    // '\$15,325.00',
+                    price,
+                    style: const TextStyle(
                       color: Constants.whiteBg,
                       fontWeight: FontWeight.bold,
                     ),

@@ -69,7 +69,15 @@ class _HomeScreenState extends State<HomeScreen> {
                     itemBuilder: (context, index) {
                       return const Padding(
                         padding: EdgeInsets.only(right: 10),
-                        child: CardWidget(),
+                        child: CardWidget(
+                          firstColor: Constants.secondary,
+                          secondColor: Constants.blackBg,
+                          thirdColor: Constants.tertially,
+                          value: "5.32",
+                          price: "2000",
+                          description: "Bitcoin",
+                          name: "BTC",
+                        ),
                       );
                     }),
               ),
