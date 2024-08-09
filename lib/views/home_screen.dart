@@ -74,7 +74,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           secondColor: Constants.blackBg,
                           thirdColor: Constants.tertially,
                           value: "5.32",
-                          price: "2000",
+                          price: "\$5000",
                           description: "Bitcoin",
                           name: "BTC",
                         ),
