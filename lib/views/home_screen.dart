@@ -1,4 +1,5 @@
 import 'package:crypto_app/constants/constants.dart';
+import 'package:crypto_app/data.dart';
 import 'package:crypto_app/widgets/card_widgets.dart';
 import 'package:flutter/material.dart';
 
@@ -65,18 +66,19 @@ class _HomeScreenState extends State<HomeScreen> {
                 width: double.infinity,
                 child: ListView.builder(
                     scrollDirection: Axis.horizontal,
-                    itemCount: 3,
+                    itemCount: cryptoData.length,
                     itemBuilder: (context, index) {
-                      return const Padding(
-                        padding: EdgeInsets.only(right: 10),
+                      var data = cryptoData[index];
+                      return Padding(
+                        padding: const EdgeInsets.only(right: 10),
                         child: CardWidget(
                           firstColor: Constants.secondary,
                           secondColor: Constants.blackBg,
                           thirdColor: Constants.tertially,
-                          value: "5.32",
-                          price: "\$5000",
-                          description: "Bitcoin",
-                          name: "BTC",
+                          value: data.value,
+                          price: "\$${data.price}",
+                          description: data.name,
+                          name: data.description,
                         ),
                       );
                     }),

@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 
 class CardWidget extends StatelessWidget {
   final Color firstColor, secondColor, thirdColor;
-  final String value, description, price, name;
+  final String description, price, name;
+  final double value;
 
   const CardWidget({
     super.key,
@@ -70,7 +71,7 @@ class CardWidget extends StatelessWidget {
                     ),
                     child: Center(
                       child: Text(
-                        value,
+                        "$value",
                         style: const TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 12),
                       ),
