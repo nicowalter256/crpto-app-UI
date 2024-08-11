@@ -12,7 +12,6 @@ DataModel _$DataModelFromJson(Map<String, dynamic> json) => DataModel(
       value: (json['value'] as num).toDouble(),
       price: (json['price'] as num).toInt(),
       description: json['description'] as String,
-      icon: json['icon'],
     );
 
 Map<String, dynamic> _$DataModelToJson(DataModel instance) => <String, dynamic>{
@@ -21,5 +20,4 @@ Map<String, dynamic> _$DataModelToJson(DataModel instance) => <String, dynamic>{
       'value': instance.value,
       'price': instance.price,
       'description': instance.description,
-      'icon': instance.icon,
     };

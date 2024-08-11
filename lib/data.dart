@@ -7,7 +7,6 @@ List<DataModel> cryptoData = [
     name: "Bitcoin",
     price: 4000,
     description: "BTC",
-    icon: "icon",
   ),
   DataModel(
     id: 2,
@@ -15,7 +14,6 @@ List<DataModel> cryptoData = [
     name: "Ethereum",
     price: 5000,
     description: "ETH",
-    icon: "icon",
   ),
   DataModel(
     id: 3,
@@ -23,6 +21,5 @@ List<DataModel> cryptoData = [
     name: "Tether",
     price: 3000,
     description: "USDT",
-    icon: "icon",
   )
 ];
