@@ -21,5 +21,12 @@ List<DataModel> cryptoData = [
     name: "Tether",
     price: 3000,
     description: "USDT",
+  ),
+  DataModel(
+    id: 4,
+    value: 1.72,
+    name: "BNB Chain",
+    price: 2000,
+    description: "BNB",
   )
 ];
