@@ -97,10 +97,36 @@ class _HomeScreenState extends State<HomeScreen> {
                 height: 100,
                 width: double.infinity,
                 decoration: const BoxDecoration(
-                  color: Constants.secondary,
+                  color: Constants.deepGreen,
                   borderRadius: BorderRadius.all(
                     Radius.circular(20),
                   ),
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Container(
+                          height: 50,
+                          width: 50,
+                          color: Colors.green,
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [Text("Binance"), Text("0.5 BIN")],
+                        )
+                      ],
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [Text("14750"), Text("+2.56%")],
+                    )
+                  ],
                 ),
               )
             ],
