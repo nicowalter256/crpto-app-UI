@@ -83,6 +83,26 @@ class _HomeScreenState extends State<HomeScreen> {
                       );
                     }),
               ),
+              const SizedBox(
+                height: 30,
+              ),
+              const Text(
+                "Recommended",
+                style: TextStyle(color: Constants.whiteBg, fontSize: 18.0),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              Container(
+                height: 100,
+                width: double.infinity,
+                decoration: const BoxDecoration(
+                  color: Constants.secondary,
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(20),
+                  ),
+                ),
+              )
             ],
           ),
         ),
