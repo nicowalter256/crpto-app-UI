@@ -109,20 +109,20 @@ class _HomeScreenState extends State<HomeScreen> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Container(
-                          height: 50,
-                          width: 50,
+                          height: 40,
+                          width: 40,
                           color: Colors.green,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 10,
                         ),
-                        Column(
+                        const Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [Text("Binance"), Text("0.5 BIN")],
                         )
                       ],
                     ),
-                    Column(
+                    const Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [Text("14750"), Text("+2.56%")],
                     )
