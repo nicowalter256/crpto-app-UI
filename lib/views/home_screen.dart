@@ -108,6 +108,9 @@ class _HomeScreenState extends State<HomeScreen> {
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
+                        const SizedBox(
+                          width: 10,
+                        ),
                         Container(
                           height: 40,
                           width: 40,
