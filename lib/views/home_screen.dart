@@ -121,7 +121,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                         const Column(
                           mainAxisAlignment: MainAxisAlignment.center,
-                          children: [Text("Binance"), Text("0.5 BIN")],
+                          children: [Text("Binance"), Text("0.5")],
                         )
                       ],
                     ),
