@@ -116,9 +116,6 @@ class _HomeScreenState extends State<HomeScreen> {
                           width: 40,
                           color: Colors.green,
                         ),
-                        const SizedBox(
-                          width: 10,
-                        ),
                         const Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [Text("Binance"), Text("0.5")],
