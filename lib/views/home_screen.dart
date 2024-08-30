@@ -114,14 +114,74 @@ class _HomeScreenState extends State<HomeScreen> {
                         Container(
                           height: 40,
                           width: 40,
-                          color: Colors.green,
+                          decoration: const BoxDecoration(
+                            color: Constants.secondary,
+                            shape: BoxShape.circle,
+                          ),
+                          child: const Center(
+                            child: Icon(
+                              Icons.currency_bitcoin,
+                              color: Constants.whiteBg,
+                            ),
+                          ),
+                        ),
+                        const SizedBox(
+                          width: 20.0,
                         ),
                         const Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.center,
-                          children: [Text("Binance"), Text("0.5")],
+                          children: [
+                            Text(
+                              "Binance",
+                              style: TextStyle(
+                                color: Constants.whiteBg,
+                              ),
+                            ),
+                            Text(
+                              "0.5",
+                              style: TextStyle(
+                                color: Constants.whiteBg,
+                              ),
+                            )
+                          ],
                         )
                       ],
                     ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 10),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          const Text(
+                            "\$14,750.26",
+                            style: TextStyle(
+                              color: Constants.whiteBg,
+                            ),
+                          ),
+                          const SizedBox(
+                            height: 7,
+                          ),
+                          Container(
+                            height: 20,
+                            width: 60,
+                            decoration: const BoxDecoration(
+                                color: Constants.secondary,
+                                borderRadius: BorderRadius.all(
+                                  Radius.circular(10),
+                                )),
+                            child: const Center(
+                                child: Text(
+                              "+2.76%",
+                              style: TextStyle(
+                                color: Constants.whiteBg,
+                              ),
+                            )),
+                          ),
+                        ],
+                      ),
+                    )
                   ],
                 ),
               )
