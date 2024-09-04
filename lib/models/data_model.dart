@@ -8,6 +8,7 @@ class DataModel {
   double value;
   int price;
   String description;
+  String? color;
 
   DataModel({
     required this.id,
@@ -15,6 +16,7 @@ class DataModel {
     required this.value,
     required this.price,
     required this.description,
+    this.color,
   });
   Map toJson() {
     return _$DataModelToJson(this);
