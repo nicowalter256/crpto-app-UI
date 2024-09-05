@@ -21,23 +21,29 @@ class DetailsPage extends StatelessWidget {
                     height: 40,
                     width: 40,
                     decoration: const BoxDecoration(
-                        shape: BoxShape.circle, color: Constants.greenBg),
+                        shape: BoxShape.circle, color: Constants.greyBG),
                     child: IconButton(
                       onPressed: () => {},
-                      icon: const Icon(Icons.dashboard),
+                      icon: const Icon(
+                        Icons.arrow_back_ios,
+                        size: 18,
+                      ),
                     ),
+                  ),
+                  const Text(
+                    "Bitcoin",
+                    style: TextStyle(color: Colors.white),
                   ),
                   Container(
                     height: 40,
                     width: 40,
                     decoration: const BoxDecoration(
-                      color: Colors.white,
-                      shape: BoxShape.circle,
-                      image: DecorationImage(
-                        image: NetworkImage(Constants.profileImage),
-                      ),
+                        shape: BoxShape.circle, color: Constants.greyBG),
+                    child: IconButton(
+                      onPressed: () => {},
+                      icon: const Icon(Icons.refresh_outlined),
                     ),
-                  )
+                  ),
                 ],
               ),
             ),
