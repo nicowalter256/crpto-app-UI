@@ -1,7 +1,9 @@
 import 'package:crypto_app/constants/constants.dart';
 import 'package:crypto_app/data.dart';
+import 'package:crypto_app/views/details_page.dart';
 import 'package:crypto_app/widgets/card_widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -69,16 +71,21 @@ class _HomeScreenState extends State<HomeScreen> {
                     itemCount: cryptoData.length,
                     itemBuilder: (context, index) {
                       var data = cryptoData[index];
-                      return Padding(
-                        padding: const EdgeInsets.only(right: 10),
-                        child: CardWidget(
-                          firstColor: Constants.secondary,
-                          secondColor: Constants.blackBg,
-                          thirdColor: Constants.tertially,
-                          value: data.value,
-                          price: "\$${data.price}",
-                          description: data.name,
-                          name: data.description,
+                      return GestureDetector(
+                        onTap: () => {
+                          Get.to(const DetailsPage()),
+                        },
+                        child: Padding(
+                          padding: const EdgeInsets.only(right: 10),
+                          child: CardWidget(
+                            firstColor: Constants.secondary,
+                            secondColor: Constants.blackBg,
+                            thirdColor: Constants.tertially,
+                            value: data.value,
+                            price: "\$${data.price}",
+                            description: data.name,
+                            name: data.description,
+                          ),
                         ),
                       );
                     }),
