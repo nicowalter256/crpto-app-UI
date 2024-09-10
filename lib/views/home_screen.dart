@@ -57,7 +57,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 style: TextStyle(color: Constants.whiteBg, fontSize: 20.0),
               ),
               const Text(
-                '\$ 47,356.36',
+                '\$47,356.36',
                 style: TextStyle(color: Constants.whiteBg, fontSize: 35.0),
               ),
               const SizedBox(
