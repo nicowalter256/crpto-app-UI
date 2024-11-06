@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Constants {
-  static const Color primary = Color(0xFF253a3c);
+  static const Color primary = Color(0xFF253a5c);
   static const Color greenBg = Color(0xFFd4f937);
   static const Color whiteBg = Colors.white;
   static const Color secondary = Color(0xFF5c959a);
