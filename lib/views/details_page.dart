@@ -18,7 +18,9 @@ class DetailsPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    height: 40,
+                    height: 42
+                    
+                  ,
                     width: 40,
                     decoration: const BoxDecoration(
                         shape: BoxShape.circle, color: Constants.greyBG),
